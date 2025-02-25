@@ -1,0 +1,159 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Container giỏ hàng */
+#cartContainer {
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+  padding: 20px;
+  min-height: 60vh;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 0 20px;
+  color: #333;
+}
+
+/* Mỗi sản phẩm hiển thị dưới dạng list */
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+/* Phần ảnh bên trái */
+.cart-item-left {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.cart-item-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Phần thông tin ở giữa */
+.cart-item-center {
+  flex: 1;
+}
+
+/* Brand/Series nhỏ hơn tên sản phẩm */
+.cart-item-brand {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+/* Tên sản phẩm to hơn */
+.cart-item-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Giá sản phẩm */
+.cart-item-price {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Giá gốc gạch ngang */
+.cart-item-old-price {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Các đoạn text chung (size, topping...) */
+.cart-item-center p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* Khu vực nút tăng/giảm số lượng */
+.quantity-control {
+  margin: 12px 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  background-color: #ccc;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.quantity-control button:hover {
+  background-color: #bbb;
+}
+
+.quantity-control .quantity {
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Nút hành động (Đặt hàng, Xóa) */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Nút Xóa */
+.remove-btn {
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f44336;
+}
+
+.remove-btn:hover {
+  opacity: 0.8;
+}
+
+/* Nút Đặt hàng */
+.order-btn {
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.order-btn:hover {
+  opacity: 0.8;
+}
