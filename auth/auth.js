@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (email === "langla779@gmail.com" && password === "123456") {
       alert("Đăng nhập thành công!");
       console.log("Redirecting to index");
-      window.location.href = "../index.html";
+      window.location.href = "https://ductrung3110.github.io/Assignment_Web_Cookie/";
     } else {
       alert("Email hoặc mật khẩu không chính xác!");
     }
