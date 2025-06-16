@@ -1,23 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM ready");
+document.addEventListener("DOMContentLoaded", function () {
+  // Xử lý đăng nhập
   const loginForm = document.getElementById("loginForm");
-  console.log("loginForm:", loginForm);
-  if (!loginForm) return;
-  loginForm.addEventListener("submit", event => {
-    event.preventDefault();
-    console.log("Form submitted");
-    const email = document.getElementById("loginEmail").value;
-    const password = document.getElementById("loginPassword").value;
-    console.log({ email, password });
-    if (email === "langla779@gmail.com" && password === "123456") {
-      alert("Đăng nhập thành công!");
-      console.log("Redirecting to index");
-      window.location.href = "https://ductrung3110.github.io/Assignment_Web_Cookie/";
-    } else {
-      alert("Email hoặc mật khẩu không chính xác!");
-    }
-  });
-});
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const email = document.getElementById("loginEmail").value;
+      const password = document.getElementById("loginPassword").value;
+
+      if (email === "langla779@gmail.com" && password === "123456") {
+        alert("Đăng nhập thành công!");
+        window.location.href = "https://ductrung3110.github.io/Assignment_Web_Cookie/index.html";
+      } else {
+        alert("Email hoặc mật khẩu không chính xác!");
+      }
+    });
+  }
 
 
   // Xử lý đăng ký
